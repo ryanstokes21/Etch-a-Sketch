@@ -1,7 +1,6 @@
 const container = document.querySelector('#container');
 const resizeBtn = document.querySelector('#resize-btn');
 
-
 resizeBtn.addEventListener('click', prompAndCreateGrid);
 function prompAndCreateGrid() {
   let newSize = prompt('Enter new grid size (max 100):');
@@ -14,7 +13,6 @@ function prompAndCreateGrid() {
     createGrid(newSize);
   }
 };
-
 
 function createGrid(size) {
   container.innerHTML = '';
